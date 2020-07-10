@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+    
+    h1 {
+      color: maroon;
+      margin-left: 40px;
+      text-align: center;
+    }
+    .topblock {
+      height: auto;
+      width:900px
+    }
+    .infobox {
+      height: 200px;
+      width: 200px;
+      background-color: {{box_color}};
+      display: inline-block;
+      margin: 4px;
+    }  
+
+    </style>
+</head>
+
+<body>
+  <h1>Welcome!</h1>
+    {#<p>Name: {{ some_name }}</p>#}
+    {#<p>Phrase: {{ box_color }}</p>#}
+    {#<p>Times: {{ times }}</p>#}
+  
+  <div class='topblock'>
+      {% for i in range(0,num_times): %}
+      <div class='infobox'>
+        <h2>sample h2 text</h2>
+      </div>
+      {% endfor %}
+      
+     
+    
+  </div>
+  
+</body>
+</html>
+
+
